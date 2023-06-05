@@ -8,6 +8,7 @@
 
   --secondary-green-clr: 192, 90%, 77%;
   --secondary-purple-clr: 268, 100%, 86%;
+  --secondary-green-white-clr: #71C0D4;
 
   --font-family: 'Red Hat Display';
 
@@ -121,6 +122,11 @@ body {
   width: 193px;
 }
 
+.btn:hover {
+  background-color: var(--secondary-green-white-clr);
+  cursor: pointer;
+}
+
 .btn-primary span {
   color: hsl(var(--secondary-green-clr));
 }
@@ -129,6 +135,10 @@ body {
   background-color: hsl(var(--primary-purple-clr));
   width: auto;
   max-width: 200px;
+}
+
+.btn-secondary:hover {
+  background-color: hsl(var(--secondary-purple-clr));
 }
 
 .separator {
@@ -199,8 +209,7 @@ body {
 }
 
 .app__footer-content {
-  background-color: hsl(var(--primary-green-clr));
-  opacity: 85%;
+  background: hsla(var(--primary-green-clr) / .85);
   padding: 7rem;
   display: grid;
   grid-template-columns: repeat(3, 1fr);
