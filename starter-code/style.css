@@ -1,0 +1,219 @@
+:root {
+
+  --primary-green-clr: 192 37% 48%;
+  --primary-purple-clr: 268 34% 53%;
+  --primary-dark-clr: 240 21% 20%;
+  --primary-white-clr: 0 0% 98%;
+  --primary-gray-clr: 240 10% 57%;
+
+  --secondary-green-clr: 192, 90%, 77%;
+  --secondary-purple-clr: 268, 100%, 86%;
+
+  --font-family: 'Red Hat Display';
+
+  --fw-regular: 300;
+  --fw-medium: 500;
+  --fw-semi-bold: 700;
+  --fw-bold: 900;
+  
+
+  --title-font-size: 64px;
+  --title-line-height: 64px;
+
+  --subtitle-font-size: 40px;
+  --subtitle-line-height: 44px;
+
+  --special-line-height: 26px;
+  --special-fs: 16px;
+  --base-font-size: 18px;
+  --base-line-height: 26px;
+}
+
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+}
+
+svg,
+img,
+canvas {
+  max-width: 100%;
+}
+
+body {
+  font-family: var(--font-family);
+  overflow-x: hidden;
+}
+
+.app__header {
+  text-align: center;
+  padding: .8rem;
+  overflow-x: hidden;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-pictures-top {
+  grid-template-columns: repeat(3, 1fr);
+  margin: 2rem 0;
+}
+
+.grid-pictures-middle {
+  gap: 2rem;
+  grid-template-columns: repeat(4, 200px);
+  margin: 2rem 0;
+  justify-content: center;
+}
+
+.grid-pictures-top .grid-item-1 {
+  display: initial;
+  text-align: start;
+  margin-left: -2rem;
+}
+
+.grid-pictures-top .grid-item-2 {
+  padding: .5rem;
+}
+
+.grid-pictures-top .grid-item-3 {
+  display: initial;
+  text-align: end;
+  margin-right: -2rem;
+}
+
+.app__main-info-title {
+  color: var(--primary-dark-clr);
+  text-align: center;
+}
+
+.app__main-title {
+  color: var(--primary-dark-clr);
+  display: block;
+  font-size: var(--title-font-size);
+  font-weight: var(--fw-medium);
+  line-height: var(--title-line-height);
+  margin: 1rem 0;
+}
+
+.grid-item-2 p {
+  color: hsl(var(--primary-gray-clr));
+  font-size: var(--fw-regular);
+  line-height: var(--base-line-height);
+}
+
+.btn {
+  border-radius: 5rem;
+  border: none;
+  color: hsl(var(--primary-white-clr));
+  font-weight: var(--fw-bold);
+  padding: .9rem;
+  margin: 1rem .5rem;
+}
+
+.btn-primary {
+  background: hsl(var(--primary-green-clr));
+  width: 193px;
+}
+
+.btn-primary span {
+  color: hsl(var(--secondary-green-clr));
+}
+
+.btn-secondary{
+  background-color: hsl(var(--primary-purple-clr));
+  width: auto;
+  max-width: 200px;
+}
+
+.separator {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.separator hr {
+  background: hsl(var(--primary-dark-clr));
+  height: 84px;
+  left: 130px;
+  opacity: 30%;
+  width: .1px;
+}
+
+.separator span {
+  background: hsl(var(--primary-white-clr));
+  border-radius: 5rem;
+  border: solid .2rem hsl(var(--primary-white-clr));
+  color: hsl(var(--primary-gray-clr));
+  height: 22px;
+  /* opacity: 75%; */
+  padding: .5rem;
+  text-align: center;
+  font-weight: var(--fw-bold);
+  width: 22px;
+  z-index: 1;
+}
+
+
+.app__main-description {
+  text-align: center;
+}
+
+.app__main-description p, .app__main-description h2{
+  width: 540px;
+  margin-inline: auto;
+}
+
+.app__main-description-tag {
+  color: hsl(var(--primary-green-clr));
+  font-size: var(--special-fs);
+  font-weight: var(--fw-bold);
+  line-height: var(--special-line-height);
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.app__main-description-title {
+  color: hsl(var(--primary-dark-clr));
+  font-size: var(--subtitle-font-size);
+  font-weight: var(--fw-semi-bold);
+  line-height: var(--subtitle-line-height);
+  max-width: 450px;
+  margin: 1.5rem 0;
+}
+
+.app__main-description-info {
+  color: hsl(var(--primary-gray-clr));
+}
+
+.app__footer {
+  background: url('./assets/desktop/image-footer.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-top: -20px;
+}
+
+.app__footer-content {
+  background-color: hsl(var(--primary-green-clr));
+  opacity: 85%;
+  padding: 7rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  align-items: center;
+  justify-content: center;
+  color: hsl(var(--primary-white-clr));
+}
+
+.app__footer-title {
+  font-size: var(--subtitle-font-size);
+  line-height: var(--subtitle-line-height);
+}
+
+.app__footer-content > * {
+  margin: 0 1rem;
+}
