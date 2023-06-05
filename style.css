@@ -202,7 +202,7 @@ body {
 }
 
 .app__footer {
-  background: url('./assets/desktop/image-footer.jpg');
+  background: url('./starter-code/assets/desktop/image-footer.jpg');
   background-size: cover;
   background-repeat: no-repeat;
   margin-top: -20px;
