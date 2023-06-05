@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'Red Hat Display';
+    src: url();
+}
+*::after, *::before {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+svg,
+img,
+canvas {
+    max-width: 100%;
+}
